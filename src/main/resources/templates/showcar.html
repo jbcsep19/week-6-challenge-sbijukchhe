@@ -24,69 +24,42 @@
         <div class="col-12">
             <div th:insert="base :: jumbotron"></div>
         </div>
+    </div>
         <br>
-
-        <!--        Adding colomns-->
+<!--    Row 2-->
+        <div class="row">
+        <!--        Adding columns-->
         <!-- Column 1-->
         <div class="col">  </div>
 
-<!--        <div class="col-4">-->
-<!--            <div class="card text-center">-->
-<!--                <div class="card-header">-->
-<!--                    Category-->
-<!--                </div>-->
-<!--                <div class="card-body">-->
-<!--                    &lt;!&ndash;                <h5 class="card-title">ID: <span th:text="${categories.categoryId}"></span></h5>&ndash;&gt;-->
-<!--                    <p class="card-text"> Id: <span th:text="${car.carId}"></span></p>-->
-<!--                    <h5 class="card-title">Make: <span th:text="${car.make}"></span></h5>-->
-
-<!--                </div>-->
-<!--                <div class="card-footer text-muted">-->
-
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-        <!--column 2-->
-        <div class="col">
-            <div class="card" text-center>
+        <!--Column 2-->
+         <div class="col-4">
+            <div class="card text-center">
+                <img src="../image/car2.jpg" alt="car" class="card-img-top" >
                 <div class="card-header">
                     Car Details
                 </div>
-                <img th:src="@{/image/car1.jpg}" class="card-img-top" alt="Car">
-<!--                <div class="card-body">-->
 
-                <!--<ul class="list-group list-group-flush">
+                <div class="card-body">
                     <h5 class="card-title">Category: <span th:text="${car.categories.categoryName}"></span></h5>
-                    <li class="list-group-item">Id: <span th:text="${car.carId}"></span> </li>
-                    <li class="list-group-item">Make: <span th:text="${car.make}"></span></li>
-                    <li class="list-group-item">Model: <span th:text="${car.model}"></span></li>
-                    <li class="list-group-item">Year: <span th:text="${car.year}"></span></li>
-                    <li class="list-group-item">Color: <span th:text="${car.color}"></span></li>
-                    <li class="list-group-item">MSRP: <span th:text="${car.MSRP}"></span></li>
-                </ul>-->
-                    <div class="card-body">
-                        <h5 class="card-title">Category: <span th:text="${car.categories.categoryName}"></span></h5>
-                        <p class="card-text"> Id: <span th:text="${car.carId}"></span></p>
-                        <p class="card-text"> Id: <span th:text="${car.make}"></span></p>
-                        <p class="card-text"> Id: <span th:text="${car.model}"></span></p>
-                        <p class="card-text"> Id: <span th:text="${car.year}"></span></p>
-                        <p class="card-text"> Id: <span th:text="${car.color}"></span></p>
-                        <p class="card-text"> Id: <span th:text="${car.MSRP}"></span></p>
-                    </div>
-                    <div class="card-footer text-muted">
-<!--                        <a th:href="@{detail_car/{id}(id=${car.carId})}" class="btn btn-info">More Info</a>-->
-                        <a th:href="@{update_car/{id}(id=${car.carId})}" class="btn btn-info">Update</a>
-                        <a th:href="@{delete_car/{id}(id=${car.carId})}"class="btn btn-info">Delete</a>
-                    </div>
+                    <p class="card-text"> Id: <span th:text="${car.carId}"></span></p>
+                    <p class="card-text"> Make: <span th:text="${car.make}"></span></p>
+                    <p class="card-text"> Model: <span th:text="${car.model}"></span></p>
+                    <p class="card-text"> Year: <span th:text="${car.year}"></span></p>
+                    <p class="card-text"> Color: <span th:text="${car.color}"></span></p>
+                    <p class="card-text"> MSRP: <span th:text="${car.MSRP}"></span></p>
                 </div>
+                <div class="card-footer text-muted">
+
+                </div>
+
             </div>
-        </div>
+            <br>
+         </div>
 
-        <!-- Column 3-->
-        <div class="col">  </div>
-
-    </div>
+            <!-- Column 3-->
+            <div class="col">  </div>
+</div>
 </div>
 <br><br>
 <!--Footer-->
